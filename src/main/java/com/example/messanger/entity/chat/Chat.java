@@ -12,11 +12,11 @@ public class Chat {
     @Id
     private int id;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "user_id_first")
     private Users userFirst;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "user_id_second")
     private Users userSecond;
 }
